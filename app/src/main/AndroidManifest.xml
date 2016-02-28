@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shrey.gosporto" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".MyApplication">
+        <activity
+            android:name=".landing_page"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".my_activities"
+            android:label="@string/title_activity_my_activities"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MiOverviewActivity"
+            android:label="activity_mi_overview"
+            android:noHistory="true" />
+        <activity
+            android:name=".MiOverviewActivityAfter"
+            android:label="activity_mi_overview_after"
+            android:noHistory="true" />
+        <activity
+            android:name=".MiLeParamsActivity"
+            android:label="activity_mi_le_params" />
+        <activity
+            android:name=".add_activity"
+            android:label="@string/title_activity_add_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mi_start"
+            android:label="@string/title_activity_mi_start"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mi_end"
+            android:label="@string/title_activity_mi_end"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".challenge_activity"
+            android:label="@string/title_activity_challenge_activity"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".leaderboard"
+            android:label="Leaderboards"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+    </application>
+
+</manifest>
